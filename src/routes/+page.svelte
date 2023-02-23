@@ -114,7 +114,7 @@
 										<li class="">
 											<a
 												class={selectedEstablishment?.id == item.id
-													? 'text-primary-400 !bg-primary-800 bg-opacity-50'
+													? 'text-primary-400 !bg-surface-700 bg-opacity-70'
 													: ''}
 												href="/"
 												on:click={() => {

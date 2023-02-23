@@ -19,11 +19,6 @@
 				<a class="btn btn-sm variant-ghost-surface" href="/establishments" rel="noreferrer">
 					Establishments
 				</a>
-				{#if $page.url.pathname == '/establishments'}
-					<a class="btn btn-sm variant-ghost-surface" href="/establishments/new" rel="noreferrer">
-						Add Establishment
-					</a>
-				{/if}
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

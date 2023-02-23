@@ -9,10 +9,12 @@
 </script>
 
 <div class="h-full">
-	<div class="text-center grid grid-cols-4 p-6 gap-4 items-center">
+	<div
+		class="text-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-10 md:p-6 gap-4 items-center"
+	>
 		<!--  -->
 		{#each establishments as item, index}
-			<div class="card h-[250px] rounded-none backdrop-blur-lg !bg-opacity-5 hover:bg-primary-300">
+			<div class="card h-[225px] rounded-none backdrop-blur-lg !bg-opacity-5 hover:bg-primary-300">
 				<header class="card-header text-primary-500"><strong>{item.name}</strong></header>
 				<div class="p-4 text-secondary-500">
 					<p>{item.address}</p>
@@ -51,4 +53,8 @@
 			</div>
 		{/each}
 	</div>
+</div>
+
+<div class="fixed bottom-0 left-0 m-4">
+	<a href="/establishments/new" class="btn btn-lg variant-soft-success">+</a>
 </div>

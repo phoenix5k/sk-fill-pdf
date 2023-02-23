@@ -82,9 +82,9 @@
 	}
 </script>
 
-<div class="container h-full mx-auto w-1/2 justify-center items-center">
+<div class="container h-full mx-auto w-11/12 md:w-3/4 justify-center items-center">
 	<div class="space-y-10 text-center">
-		<div class="mt-10 card variant-ringed-primary">
+		<div class="mt-10 card variant-soft-surface">
 			<Stepper on:next={onNextHandler}>
 				<Step locked={lockedSteps[0]}>
 					<svelte:fragment slot="header">Start typing to search</svelte:fragment>
@@ -121,8 +121,12 @@
 													itemSelected(item);
 												}}
 											>
-												<span class="ml-5">📍</span>
-												<span class=""><strong>{item.name}</strong> - {item.address}</span>
+												<span class="md:ml-3"
+													><span class="pr-2">📍</span><strong class="whitespace-normal"
+														>{item.name}</strong
+													>
+													- <span class="whitespace-normal">{item.address}</span></span
+												>
 											</a>
 										</li>
 									{/each}
@@ -132,7 +136,7 @@
 					</div>
 				</Step>
 
-				<Step locked={lockedSteps[1]}>
+				<Step buttonComplete="false" buttonCompleteLabel="" locked={lockedSteps[1]}>
 					{#if generatedLock}
 						<center><Plane size="60" color="#FF3E00" unit="px" duration="1s" /></center>
 					{:else}

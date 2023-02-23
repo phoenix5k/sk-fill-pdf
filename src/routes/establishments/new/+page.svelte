@@ -3,6 +3,10 @@
 	import { goto } from '$app/navigation';
 </script>
 
+<svelte:head>
+	<title>New Establishment</title>
+</svelte:head>
+
 <div class="container mt-10 mx-auto flex justify-center items-center">
 	<!--  -->
 	<div class="card p-10 variant-soft-surface">

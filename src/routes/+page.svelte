@@ -82,6 +82,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>PDF Filler</title>
+</svelte:head>
+
 <div class="container h-full mx-auto w-11/12 md:w-3/4 justify-center items-center">
 	<div class="space-y-10 text-center">
 		<div class="mt-10 card variant-soft-surface">

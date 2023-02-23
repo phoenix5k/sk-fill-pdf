@@ -8,6 +8,10 @@
 	let toRemove: number = 0;
 </script>
 
+<svelte:head>
+	<title>Establishments</title>
+</svelte:head>
+
 <div class="h-full">
 	<div
 		class="text-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-10 md:p-6 gap-4 items-center"

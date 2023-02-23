@@ -88,7 +88,7 @@
 
 <div class="container h-full mx-auto w-11/12 md:w-3/4 justify-center items-center">
 	<div class="space-y-10 text-center">
-		<div class="mt-10 card variant-soft-surface">
+		<div class="mt-10 card variant-ringed-primary">
 			<Stepper on:next={onNextHandler}>
 				<Step locked={lockedSteps[0]}>
 					<svelte:fragment slot="header">Start typing to search</svelte:fragment>
@@ -118,7 +118,7 @@
 										<li class="">
 											<a
 												class={selectedEstablishment?.id == item.id
-													? 'text-primary-400 !bg-surface-700 bg-opacity-70'
+													? 'text-primary-400 !bg-primary-800 bg-opacity-50'
 													: ''}
 												href="/"
 												on:click={() => {
